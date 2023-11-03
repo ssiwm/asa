@@ -1,0 +1,74 @@
+{
+  "WBUI2": {
+    "settings": {
+      "OpenButton": 0,
+      "HideIcon": false,
+      "HideIconAfter": 60,
+      "IconURL": "https://i.imgur.com/OZ6xOjY.png",
+      "DisableIconText": false,
+      "OpenOnStart": true,
+      "OpenOnStartOnlyNewPlayers": true,
+      "UpdateInterval": 12
+    },
+    "tabs": [
+      {
+        "tab1": {
+          "layout": 1,
+          "buttontext": "Welcome",
+          "title1": "Thanks for installing WBUI2!",
+          "text1": "This mod is in an early stage.\nYou can Expect bugs!\n\n\nThis UI is unedited. Pls contact an Admin.\n\nAre you an Admin?\nPls click on the buttons down below to get to the CurseForge site or my discord to get an explanation how to setup this mod.\n\nYou can find a simple explanation in the settings tab.",
+          "imageurl": "https://i.imgur.com/mGt3cAF.png"
+        }
+      },
+      {
+        "tab2": {
+          "layout": 2,
+          "buttontext": "Settings",
+          "title1": "INI settings:",
+          "text1": "Ini Header:\n\n\\[WBUI2]\n\n\nINI-Options:\n\nUseIni=true/false  -  default:false, if true you have to supply the settings JSON via INI.\n\nSettingsJson=\"JSONstring\"  -  If you use the ini to supply the settings you have to enter the JSON here. You can write the JSON in a texteditor, use the validator linked down below and simplyfie it into a oneliner. you need to wrap the JSON in \" \".\n\nJsonURL=\"url\"  -  default=\"https://pastebin.com/raw/rB8NFyDV\", if you dont use the ini to supply the JSON you have to host the file as \"raw\" somewhere and enter the URL to it wraped in \" \". You can you pastebin (linked below). After uploading the file you'll find a button called \"raw\". click the button and copy the URL.\n\n\nYou can trigger an update of the JSON via console command:\ncheat scriptcommand WBUI2 update",
+          "title2": "JSON settings:",
+          "text2": "OpenButton  -  0/1/2/3/4/5/6, default:0, 0=F1, 1=F2, 2=F3, 3=F4, 4=F5, 5=Delete, 6=Home  -  Determines the button the player needs to press to open the UI.\n\nHideIcon  -  true/false, default: false  -  If true the Icon in the bottom left corner vanishes after some time.\n\nHideIconAfter  -  integer, default: 60  -  Determines after how many seconds the Icon vanishes.\n\nIconURL  -  \"URL\", default: \"https://i.imgur.com/OZ6xOjY.png\"  -  You can upload a custom image somewhere (e.g. imgur, link down below) and it will be used as the Icon in the bottom left.\n\nDisableIconText  -  true/false, default:false  -  If true the text \"F1 for Info\" will not be displayed.\n\nOpenOnStart  -  true/false, default: true  -  If true the UI will open automatically after the player spawned.\n\nOpenOnStartOnlyNewPlayers  -  true/false, default: true  -  If true the UI only opens automatically the first time the player spawns on the server.\n\nUpdateInterval  -  integer, default: 12  -  This value determines the time in hours the mod automatically pulls the JSON from the URL to update settings.\n\nGENERAL INFORMATION:\n\nFor the rest of the settings pls checkout the example JSON linked down below.\nIn order to pass the JSON-validation you have to use \"*backslash*n\" without a space to generate newlines. although the mod should handle regular newlines just fine.\nSpecial characters like \" have to be escaped with a *backslash*\nBe careful with the filesize of the images. The server has to download them everytime the server starts and when it updates the JSON. Additionally the server has to transfer them to the client.",
+          "imageurl": "https://i.imgur.com/mGt3cAF.png"
+        }
+      }
+    ],
+    "links": [
+      {
+        "link1": {
+          "text": "Discord",
+          "url": "https://discord.com/invite/K7NyrTV"
+        }
+      },
+      {
+        "link2": {
+          "text": "CurseForge",
+          "url": "https://example.com/link2"
+        }
+      },
+      {
+        "link3": {
+          "text": "JSON-Validator",
+          "url": "https://jsonlint.com"
+        }
+      },
+      {
+        "link4": {
+          "text": "Pastebin",
+          "url": "https://pastebin.com"
+        }
+      },
+      {
+        "link5": {
+          "text": "Imgur",
+          "url": "https://imgur.com"
+        }
+      },
+      {
+        "link6": {
+          "text": "Example JSON",
+          "url": "https://pastebin.com/bT9WVwqK"
+        }
+      }
+    ]
+  }
+}
