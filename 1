@@ -1,74 +1,71 @@
 {
-  "WBUI2": {
-    "settings": {
-      "OpenButton": 0,
-      "HideIcon": false,
-      "HideIconAfter": 60,
-      "IconURL": "https://i.imgur.com/OZ6xOjY.png",
-      "DisableIconText": false,
-      "OpenOnStart": true,
-      "OpenOnStartOnlyNewPlayers": true,
-      "UpdateInterval": 12
-    },
-    "tabs": [
-      {
-        "tab1": {
-          "layout": 1,
-          "buttontext": "Welcome",
-          "title1": "Thanks for installing WBUI2!",
-          "text1": "This mod is in an early stage.\nYou can Expect bugs!\n\n\nThis UI is unedited. Pls contact an Admin.\n\nAre you an Admin?\nPls click on the buttons down below to get to the CurseForge site or my discord to get an explanation how to setup this mod.\n\nYou can find a simple explanation in the settings tab.",
-          "imageurl": "https://i.imgur.com/mGt3cAF.png"
-        }
-      },
-      {
-        "tab2": {
-          "layout": 2,
-          "buttontext": "Settings",
-          "title1": "INI settings:",
-          "text1": "Ini Header:\n\n\\[WBUI2]\n\n\nINI-Options:\n\nUseIni=true/false  -  default:false, if true you have to supply the settings JSON via INI.\n\nSettingsJson=\"JSONstring\"  -  If you use the ini to supply the settings you have to enter the JSON here. You can write the JSON in a texteditor, use the validator linked down below and simplyfie it into a oneliner. you need to wrap the JSON in \" \".\n\nJsonURL=\"url\"  -  default=\"https://pastebin.com/raw/rB8NFyDV\", if you dont use the ini to supply the JSON you have to host the file as \"raw\" somewhere and enter the URL to it wraped in \" \". You can you pastebin (linked below). After uploading the file you'll find a button called \"raw\". click the button and copy the URL.\n\n\nYou can trigger an update of the JSON via console command:\ncheat scriptcommand WBUI2 update",
-          "title2": "JSON settings:",
-          "text2": "OpenButton  -  0/1/2/3/4/5/6, default:0, 0=F1, 1=F2, 2=F3, 3=F4, 4=F5, 5=Delete, 6=Home  -  Determines the button the player needs to press to open the UI.\n\nHideIcon  -  true/false, default: false  -  If true the Icon in the bottom left corner vanishes after some time.\n\nHideIconAfter  -  integer, default: 60  -  Determines after how many seconds the Icon vanishes.\n\nIconURL  -  \"URL\", default: \"https://i.imgur.com/OZ6xOjY.png\"  -  You can upload a custom image somewhere (e.g. imgur, link down below) and it will be used as the Icon in the bottom left.\n\nDisableIconText  -  true/false, default:false  -  If true the text \"F1 for Info\" will not be displayed.\n\nOpenOnStart  -  true/false, default: true  -  If true the UI will open automatically after the player spawned.\n\nOpenOnStartOnlyNewPlayers  -  true/false, default: true  -  If true the UI only opens automatically the first time the player spawns on the server.\n\nUpdateInterval  -  integer, default: 12  -  This value determines the time in hours the mod automatically pulls the JSON from the URL to update settings.\n\nGENERAL INFORMATION:\n\nFor the rest of the settings pls checkout the example JSON linked down below.\nIn order to pass the JSON-validation you have to use \"*backslash*n\" without a space to generate newlines. although the mod should handle regular newlines just fine.\nSpecial characters like \" have to be escaped with a *backslash*\nBe careful with the filesize of the images. The server has to download them everytime the server starts and when it updates the JSON. Additionally the server has to transfer them to the client.",
-          "imageurl": "https://i.imgur.com/mGt3cAF.png"
-        }
-      }
-    ],
-    "links": [
-      {
-        "link1": {
-          "text": "Discord",
-          "url": "https://discord.com/invite/K7NyrTV"
-        }
-      },
-      {
-        "link2": {
-          "text": "CurseForge",
-          "url": "https://example.com/link2"
-        }
-      },
-      {
-        "link3": {
-          "text": "JSON-Validator",
-          "url": "https://jsonlint.com"
-        }
-      },
-      {
-        "link4": {
-          "text": "Pastebin",
-          "url": "https://pastebin.com"
-        }
-      },
-      {
-        "link5": {
-          "text": "Imgur",
-          "url": "https://imgur.com"
-        }
-      },
-      {
-        "link6": {
-          "text": "Example JSON",
-          "url": "https://pastebin.com/bT9WVwqK"
-        }
-      }
-    ]
-  }
+"WBUI2": {
+"settings": {
+"OpenButton": 0,
+"HideIcon": true,
+"HideIconAfter": 30,
+"IconURL": "https://i.imgur.com/WNcMOBa.png",
+"DisableIconText": true,
+"IconPosition": 0,
+"IconTextColor": 0,
+"OpenOnStart": true,
+"OpenOnStartOnlyNewPlayers": true,
+"UpdateInterval": 12
+},
+"tabs": [
+{
+"tab1": {
+"layout": 1,
+"buttontext": "Welcome",
+"title1": "First of all, have a great time!",
+"text1": "\nWe are excited to have you join us on this epic journey through a world filled with danger and adventure. In this world, you will need to gather resources, craft items, and build shelters to survive against the various challenges that you will face.\n\nAs you explore the beautiful and diverse environments of Ark, you will encounter a variety of different creatures, both friendly and hostile. You will need to use your skills and wits to tame, train, and ride these creatures, using them to help you in your journey.\n\n\nOur server is home to a thriving community of players who are always eager to help new players. Be sure to join us in our Discord server to stay up to date on all the latest news and events.\n\n\n<TextStyle.Green>What you can expect from our Community</>\n ● always available, up-to-date servers with the highest quality hardware,\n ● the most interesting mods,\n ● balanced settings, although we also have servers with crazy ones sometimes,\n ● support from admin, community helpers and players,\n ● no toxic behavior,\n ● influence on server development thanks to suggestion channels and regular surveys,\n ● and a lot more.\n\n\nThank you for choosing to play on our Ark Survival server. We hope you have a fun and rewarding experience with us!\n<TextStyle.Green>SG</>",
+"imageurl": "https://i.imgur.com/S1H6Pgo.png"
+}
+},
+{
+"tab2": {
+"layout": 1,
+"buttontext": "Important Info",
+"title1": "This is a PVE server so treat each other with respect.",
+"text1": "<TextStyle.Green>Keyboard shortcuts</>\n ● F1 WBUI INFO\n ● F3 VOTE\n ● F4 REPORT\n ● F6 RATE COMMUNITY\n\nConsole players can find <TextStyle.Green>function keys</> by holding <TextStyle.Green>X</> on Xbox or holding <TextStyle.Green>□</> on PS.\n\nFor voting for the server you will receive 200 tokens, more for Supporter Tiers. Remember to use <TextStyle.Green>!Claim</> on <TextStyle.Green>#bot-spam</> discord channel after voting.\n\n<TextStyle.Green>Decay settings:</>\n ● Default - 5 Days \n ● Ramshackle - 10 Days \n ● Apprentice - 15 Days \n ● Journeyman - 20 Days \n ● Mastercraft - 25 Days \n ● Ascendant - 30 Days\n\nTo fully benefit from the possibility of collecting <TextStyle.Green>Tokens</>, each new player should connect in-game character with a website account. After <TextStyle.Green>connecting your accounts</>, tokens received for voting, time spent in the game and those received as part of supporter tiers will be automatically assigned to your account.\n\nIf you have any questions, please visit discord.",
+"imageurl": "https://i.imgur.com/S1H6Pgo.png"
+}
+},
+{
+"tab3": {
+"layout": 1,
+"buttontext": "Server Rules",
+"title1": "These are the rules for this community:",
+"text1": "<TextStyle.Red>Insta-ban will be given for:</>\n ● Any form of racism, homophobic or trash talk.\n ● Any form of hacking / cheating / exploiting.\n\n<TextStyle.Red>Rules:</>\n ● Keep the game enjoyable for others. Remind your fellow survivors about this.\n ● Help your fellow survivors!\n ● Don't block access to public places with buildings, turrets, or dinos. Public places include: important resource spots (i.e. the vulcano), Spawn points, Obelisks, and Artifact caves. Drops and Explorer notes are NOT protected spaces. If in doubt, it is probably protected.\n ● Clean up after yourself.\n ● No mass land grab.\n ● No Pillar/foundation spamming.\n ● No massive bases (use common sense).\n ● Only 1 Tribe base and 1 Personal outpost is allowed.\n ● No player killing: Players cannot engage in PVP (Player versus Player) combat. This means that players cannot kill or attack other players, their structures, or their tamed creatures.\n ● No griefing: Players should not engage in any behavior that intentionally ruins another player's experience, such as building structures that block access to resources, building structures that damage another player's structures, or trapping other players with their tamed creatures.\n ● No stealing: Players cannot take resources, items, or creatures from other players without their permission.\n ● Respect other players' bases: Players should not enter other players' bases without their permission. Players should also not build their structures too close to another player's base, as this can cause issues with resource spawns or creature spawns.\n ● No excessive breeding: While breeding creatures is allowed, players should not breed excessively to prevent overcrowding of the server.\n ● It is forbidden to beg for help from other players, if someone wants to help you, he will offer it himself.",
+"imageurl": "https://i.imgur.com/S1H6Pgo.png"
+}
+}
+],
+"links": [
+{
+"link1": {
+"text": "Discord",
+"url": "https://discord.gg/survival-games-servers-966369584724709446"
+}
+},
+{
+"link2": {
+"text": "Website",
+"url": "https://sgservers.eu"
+}
+},
+{
+"link3": {
+"text": "Shop",
+"url": "https://sgservers.eu/shop"
+}
+},
+{
+"link4": {
+"text": "Connect account",
+"url": "https://sgservers.eu/page/82327-connect"
+}
+}
+]
+}
 }
